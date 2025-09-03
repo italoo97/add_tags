@@ -1,5 +1,12 @@
 from discord.ext import commands
 from config import SERVER_ID, VERIFICATED_ID
+import json
+
+with open("config.json", "r", encoding="utf-8") as f:
+    config = json.load(f)
+
+GUILD_ID = config["GUILD_ID"]
+ROLE_ID = config["ROLE_ID"]
 
 class AutoRole(commands.Cog):
     def __init__(self, bot):
