@@ -1,7 +1,13 @@
 import discord
 from discord.ext import commands
 import asyncio
-from config import TOKEN, Tag
+import json
+
+with open("config.json", "r", encoding="utf-8") as f:
+    config = json.load(f)
+
+TOKEN = config["TOKEN"]
+Tag = config["Tag"]
 
 intents = discord.Intents.all()
 intents.message_content = True
