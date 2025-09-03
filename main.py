@@ -10,10 +10,6 @@ TOKEN = config["TOKEN"]
 Tag = config["Tag"]["enabled"]
 
 intents = discord.Intents.all()
-intents.message_content = True
-intents.guilds = True
-intents.members = True
-intents.voice_states = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
@@ -47,3 +43,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
