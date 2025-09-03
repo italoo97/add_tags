@@ -7,7 +7,7 @@ with open("config.json", "r", encoding="utf-8") as f:
     config = json.load(f)
 
 TOKEN = config["TOKEN"]
-Tag = config["Tag"]
+Tag = config["Tag"]["enabled"]
 
 intents = discord.Intents.all()
 intents.message_content = True
