@@ -1,6 +1,8 @@
 {
-    "Tag": true,
     "TOKEN":"",
     "SERVER_ID": ,
-    "VERIFICATED_ID":
+    "Tag": {
+        "enabled": true,
+        "VERIFICATED_ID": 
+    }
 }
